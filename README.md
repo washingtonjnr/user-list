@@ -20,3 +20,14 @@ Contém as entidades de negócio, interfaces de repositórios e os casos de uso.
 
 <h3>🎨 Camada de apresentação</h3> 
 Gerencia a interface e a interação do usuário. Utiliza controladores para gerenciar estados e ações, proporcionando uma experiência mais fluida.
+
+<h2 id="running">🚀 Como Rodar o Projeto</h2>
+
+1. **Instale as dependências**: 
+   Execute o seguinte comando no terminal:
+   ```bash
+   flutter pub get
+2. **Rode o projeto**: 
+   Execute o seguinte comando no terminal:
+   ```bash
+   flutter run

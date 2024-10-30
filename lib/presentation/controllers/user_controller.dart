@@ -1,14 +1,13 @@
 import 'package:get/get.dart';
 // Entities
-import 'package:users/domain/entities/user.dart';
+import 'package:users/domain/entities/user_entity.dart';
 // Use cases
 import 'package:users/domain/usecases/get_user.dart';
-
 
 class UserController extends GetxController {
   final GetUsers getUsers;
   // 
-  var users = <User>[].obs;
+  var users = <UserEntity>[].obs;
   var isLoading = true.obs;
 
   UserController(this.getUsers);
@@ -16,12 +15,12 @@ class UserController extends GetxController {
   @override
   void onInit() {
     fetchUsers();
-    
     super.onInit();
   }
 
-  Future<void> fetchUsers() async {
+  void fetchUsers() async {
     isLoading(true);
+    
     try {
       users.value = await getUsers();
     } finally {

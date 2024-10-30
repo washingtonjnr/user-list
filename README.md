@@ -1,16 +1,15 @@
-# users
+# User List
 
-A new Flutter project.
+## Descrição do Projeto
+#### Este projeto exibe uma lista de usuários, permitindo que você visualize detalhes e atualize dados manualmente.
 
-## Getting Started
+## Camadas do Projeto
+### Camada de Dados
+#### Esta camada é responsável pela comunicação com a API e pela implementação dos repositórios. Aqui, você encontrará modelos que representam os dados.
 
-This project is a starting point for a Flutter application.
+## Camada de Domínio
+#### Contém as entidades de negócio, interfaces de repositórios e os casos de uso. É onde a lógica de negócio da aplicação é definida.
 
-A few resources to get you started if this is your first Flutter project:
+## Camada de Apresentação
+#### Gerencia a interface e a interação do usuário. Utiliza controladores para gerenciar estados e ações, proporcionando uma experiência mais fluida.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.

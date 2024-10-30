@@ -1,5 +1,5 @@
 // Entities
-import 'package:users/data/models/user_model.dart';
+import 'package:users/domain/entities/user_entity.dart';
 // Repositories
 import 'package:users/domain/repositories/user_repository.dart';
 
@@ -9,7 +9,7 @@ class GetUsers {
 
   GetUsers(this.repository);
 
-  Future<List<UserModel>> call() async {
-    return await repository.fetchList<UserModel>();
+  Future<List<UserEntity>> call() async {
+    return await repository.getUsers();
   }
 }

@@ -20,12 +20,12 @@ void main() {
   ];
 
   test('deve retornar uma lista de usuários', () async {
-    when(mockUserRepository.fetchList()).thenAnswer((_) async => tUsers);
+    when(mockUserRepository.getUsers()).thenAnswer((_) async => tUsers);
     
     final result = await usecase();
 
     expect(result, tUsers);
-    verify(mockUserRepository.fetchList());
+    verify(mockUserRepository.getUsers());
     verifyNoMoreInteractions(mockUserRepository);
   });
 }
